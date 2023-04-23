@@ -551,7 +551,7 @@ p.city {
 }
 
 /* Obrazek emailu */
-#info #email h3::before {
+#info #mail h3::before {
     font-family: "Font Awesome 6 Free";
     content: '\f003';
     padding-right: 10px;
