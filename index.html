@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Tomáš Ebert</title>
+</head>
+<body>
+    
+    <header>
+        <section id="sidebar">
+            <div id="profile-picture">
+                <a href="index.html">
+                        <img src="img/image1.jpg" alt="Hey, I'm Tomáš Ebert">
+                    <h1>Tomáš Ebert</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="networks">
+                <span>
+                    <a href="https://www.facebook.com/norbi.ebik/"><i class="fab fa-facebook"></i></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/norbi.ebik/?igshid=YjNmNGQ3MDY%3D&fbclid=IwAR2_2aqEkrYRf_vRZ0j_HQSL1DESyq7CsnrtkYPOO5autVlFAJxjKecGSXA"><i class="fab fa-instagram"></i></a>
+                </span>
+                <span>
+                    <a href="https://github.com/Norbatko"><i class="fab fa-github-square"></i></a>
+                </span>
+                <span>
+                    <a href="https://open.spotify.com/user/21c4usfuu6okgc6iwbxvsso5i?si=7725651b95364656"><i class="fab fa-spotify"></i></a>
+                </span>
+            </div>
+        </section>
+    </header>
+    <main>
+            <section id="home">
+                <p>Hey,</p>
+                <div class="container">
+                    <span class="text first-text">I'm </span>
+                    <span class="text second-text"></span>
+                </div>
+                <p class="city">based in Moravská Třebová, Czech Republic</p>
+                <script src="js/script.js"></script>
+                <a href="#contact">Hire me</a>
+            </section>
+            <section id="about">
+                <div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="/video/choir.mp4" type="video/mp4">
+                    </video>
+                    <div class="content">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet sed euismod nisi porta lorem mollis aliquam. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Ipsum dolor sit amet consectetur. Interdum velit euismod in pellentesque. Netus et malesuada fames ac turpis egestas sed tempus. Nibh ipsum consequat nisl vel pretium lectus. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="education">
+                <h1>Education</h1>
+                <div class="container left first">
+                    <div class="content">
+                        <h2>2008-2013</h2>
+                        <p>Základní škola Moravská Třebová </p>
+                        <p>Palackého 1351, 571 01 Moravská Třebová</p>
+                    </div>
+                </div>
+                    <div class="container right second">
+                    <div class="content">
+                        <h2>2013-2021</h2>
+                        <p>Gymnázium a Letecká střední odborná škola</p>
+                        <p>Svitavská 310,  571 01 Moravská Třebová</p>
+                    </div>
+                </div>
+                <div class="container left third">
+                    <div class="content">
+                        <h2>2021-today</h2>
+                        <p>Fakulta informačních technologií VUT</p>
+                        <p>Božetěchova 2, 612 00 Brno</p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="content">
+                    <p>Click on the image to download the best "Kowculator" on Ubuntu and hear the joyful "Moo":</p>
+                    <audio id="kow_play">
+                        <source src="sound/Cow-Mooing.wav" type="audio/wav" />
+                    </audio>
+                    <img class="download" src="/img/kowculator_logo.png" alt="Kowculator" onClick="window.open('/download/kowculator_1.0_amd64.deb'); document.getElementById('kow_play').play(); return false;">
+                    <p>Little peak of beautiful Kowculator, that you actually need for your life!</p>
+                    <img src="/img/kowculator.png" alt="Kowculator">
+                    <p>My colleagues are: Jan Vašák, Sára Jobranová and Karolína Pirohová</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+                <div id="contact-content">
+                    <div id="info">
+                        <h2>Contact me</h2>
+                        <div id="address">
+                            <h3>Address:</h3>
+                            <p>Nádražní 1480/17, Moravská Třebová, 571 01</p>
+                        </div>
+                        <div id="phone">
+                            <h3>Phone:</h3>
+                            <p>+420 737 457 457</p>
+                        </div>
+                        <div id="email">
+                            <h3>Email:</h3>
+                            <p>Tomi.Ebik@seznam.cz</p>
+                        </div>
+                        <div class="networks">
+                            <h3>Networks:</h3>
+                            <span>
+                                <a href="https://www.facebook.com/norbi.ebik/"><i class="fab fa-facebook"></i></a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/norbi.ebik/?igshid=YjNmNGQ3MDY%3D&fbclid=IwAR2_2aqEkrYRf_vRZ0j_HQSL1DESyq7CsnrtkYPOO5autVlFAJxjKecGSXA"><i class="fab fa-instagram"></i></a>
+                            </span>
+                            <span>
+                                <a href="https://github.com/Norbatko"><i class="fab fa-github-square"></i></a>
+                            </span>
+                            <span>
+                                <a href="https://open.spotify.com/user/21c4usfuu6okgc6iwbxvsso5i?si=7725651b95364656"><i class="fab fa-spotify"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="form">
+                        <h2>Get in touch</h2>
+                        <form>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <input type="text" id="email" name="email" placeholder="Email" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <input type="text" id="message" name="message" placeholder="Message" required>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div> 
+            <p>Created by <a href="#home">Tomáš Ebert</a></p>
+            <p>ITW 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
