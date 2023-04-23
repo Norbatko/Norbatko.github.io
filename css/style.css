@@ -1,3 +1,5 @@
+/* Author: Tomáš Ebert, xebert00 */
+
 :root {
     --background-home:#2E2E2E;
     --background-about: #2B2B2B;
@@ -43,6 +45,7 @@ section {
     justify-content: center;
 }
 
+/* Tomas Ebert v sidebar */
 #profile-picture h1 {
     font-size: 25px;
     margin-top: 10px;
@@ -51,11 +54,12 @@ section {
     transition: color var(--animation_time);
 }
 
+/* Zbarveni jmena */
 #sidebar h1:hover{
     color: var(--decoration);
 }
 
-
+/* Velikost obrazku v sidebar */
 #profile-picture img {
     margin: 10px 0;
     width: 200px;
@@ -64,10 +68,12 @@ section {
     transition: border var(--animation_time);
 }
 
+/* Zbarveni ramecku kolem obrazku */
 #sidebar img:hover{
     border-color: var(--decoration);
 }
 
+/* Pozicovani navigace */
 #sidebar nav {
     flex: 100%;
     justify-content: center;
@@ -88,6 +94,7 @@ section {
     padding: 10px 0;
 }
 
+/* Zbarveni textu */
 #sidebar a {
     text-decoration: none;
     text-decoration-line: none;
@@ -99,6 +106,7 @@ section {
     color: var(--decoration);
 }
 
+/* Pri hover podrtzeni textu */
 #sidebar nav a::after {
     content: "";
     display: block;
@@ -125,8 +133,6 @@ section {
 
 
 
-
-/* Content */
 #home, #about, #education, #projects, #contact, footer {
    margin-left: 250px;
 }
@@ -164,7 +170,7 @@ p.city {
     font-size: 1rem;
 }
 
-
+/* Nastaveni blikajiciho cursoru na prepisovani textu */
 .text.second-text::before{
     content: '';
     position: absolute;
@@ -201,9 +207,6 @@ p.city {
 }
 
 
-
-
-
 #about {
     background-color: var(--background-about);
     overflow: hidden;
@@ -220,6 +223,7 @@ p.city {
     position: relative;
 }
 
+/* Video pres cely viewport */
 #about video {
     position: relative;
     top: 0;
@@ -228,6 +232,7 @@ p.city {
     height: 100vh;
 }
 
+/* Prekryti videa textem */
 #about .content {
     position: absolute;
     top: 0;
@@ -280,6 +285,7 @@ p.city {
     margin-right: -2px;
 }
 
+/* Ramecky kolem skol */
 #education .content {
     color: var(--basic-text);
     padding: 20px 20px;
@@ -295,6 +301,7 @@ p.city {
     border-radius: 5px;
 }
 
+/* Sipka z ramecku skoly doprava */
 #education .first .content::after {
     content: " ";
     height: 0;
@@ -308,6 +315,7 @@ p.city {
     border-color: transparent transparent transparent var(--decoration);
 }
 
+/* Kolecko na casove ose */
 #education .first .content::before {
     content: '';
     position: absolute;
@@ -326,6 +334,7 @@ p.city {
     border-radius: 5px;
 }
 
+/* Sipka z ramecku skoly doleva */
 #education .second .content::after {
     content: " ";
     height: 0;
@@ -339,6 +348,7 @@ p.city {
     border-color: transparent var(--decoration) transparent transparent;
 }
 
+/* Kolecko na casove ose */
 #education .second .content::before {
     content: '';
     position: absolute;
@@ -357,6 +367,7 @@ p.city {
     border-radius: 5px;
 }
 
+/* Sipka z ramecku skoly doprava */
 #education .third .content::after {
     content: " ";
     height: 0;
@@ -370,6 +381,7 @@ p.city {
     border-color: transparent transparent transparent var(--decoration);
 }
 
+/* Kolecko na casove ose */
 #education .third .content::before {
     content: '';
     position: absolute;
@@ -538,6 +550,7 @@ p.city {
     text-decoration: none;
 }
 
+/* Obrazek emailu */
 #info #email h3::before {
     font-family: "Font Awesome 6 Free";
     content: '\f003';
@@ -545,6 +558,7 @@ p.city {
     color: var(--decoration);
 }
 
+/* Obrazek telefonu */
 #info #phone h3::before {
     font-family: FontAwesome;
     content: '\f095';
@@ -552,6 +566,7 @@ p.city {
     color: var(--decoration);
 }
 
+/* Obrazek adresy */
 #info #address h3::before {
     font-family: FontAwesome;
     content: '\f015';
@@ -593,7 +608,7 @@ footer a {
     transition: color var(--animation_time);
 }
 
-
+/* Podrtrzeni Created by Tomas Ebert */
 footer a::after {
     content: "";
     display: block;
@@ -615,8 +630,9 @@ footer a:hover {
 
 
 
-
+/* Resizing */
 @media screen and (max-width: 768px) {
+    /* Fixni pozice na vrcholu viewportu */
     #sidebar {
         position: fixed;
         width: 100%;
@@ -624,6 +640,7 @@ footer a:hover {
         top: 0;
     }
 
+    /* Vymazani obrazku, jmena a socialnich siti ze sidebar*/
     #sidebar #profile-picture, #sidebar .networks {
         display: none;
     }
@@ -684,11 +701,12 @@ footer a:hover {
         margin: 30px 0;
     }
 
-    
+    /* Vymazani kolecek */
     #education .first .content::before, #education .second .content::before, #education .third .content::before {
         content: none;
     }
 
+    /* Vymazani sipek */
     #education .first .content::after, #education .second .content::after, #education .third .content::after  {
         content: none;
     }
