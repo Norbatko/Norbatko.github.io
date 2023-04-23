@@ -1,3 +1,5 @@
+// Author: xebert00, Tomáš Ebert
+
 const text = document.querySelector(".second-text");
 
 const textLoad = () => {
